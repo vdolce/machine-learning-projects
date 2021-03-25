@@ -25,7 +25,7 @@ print('total training horse images:', len(os.listdir(train_horse_dir)))
 print('total training human images:', len(os.listdir(train_human_dir)))
 
 ################################################
-############## STAMPA IMAGINI ##################
+##############  PRINT IMAGES  ##################
 ################################################
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
@@ -58,7 +58,7 @@ for i, img_path in enumerate(next_horse_pix+next_human_pix):
 plt.show()
 
 ################################################
-################ MODELLO CNN ###################
+################ CNN  MODEL  ###################
 ################################################
 
 import tensorflow as tf
@@ -92,7 +92,7 @@ model = tf.keras.models.Sequential([
 model.summary()
 
 
-################ SPECIFICHE DEL MODELLO ###################
+################ MODEL CHARACTERISTICS  ###################
 
 # 1. loss function: binary_crossentropy loss (the final activation is a SIGMOID)
 # 2. optimizer: RMSprop - with a learning rate of 0.001. 
